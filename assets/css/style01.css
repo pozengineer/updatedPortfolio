@@ -1,6 +1,70 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+html, body {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 20%);
+    height: 100%;
+    margin: 0;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.lead {
+    text-align: center;
+    color: #ffffff;
+}
+
+.flex-column {
+    min-height: calc(100vh - 70px);
+}
+
+.mainTitle {
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: #7575a3;
+}
+
+#currentTime {
+    text-align: center;
+    font-size: 25px;
+}
+
+.header {
+    background-color: #777777 !important;
+}
+
+.navLogo {
+    text-align: center;
+}
+
+#minutes {
+    font-size: 40px;
+    float: left;
+    margin-left: 25%;
+    color: #ffffff;
+}
+  
+#seconds {
+    font-size: 25px;
+    float: left;
+    color: #333333;
+}
 
 .logoImage {
     width: 195px;
@@ -21,6 +85,15 @@
     border-color: #cccccc; */
 }
 
+.nav-link {
+    padding: 0;
+}
+
+.fa {
+    margin-right: 5px;
+    font-size: 25px;
+}
+
 a nav-link{
     color: #666666 !important;
 }
@@ -38,8 +111,13 @@ a:hover {
     text-decoration: none;
 }
 
+.appLink:hover {
+    color: #0a00ff !important;
+    text-decoration: none;
+}
+
 .nav-item:hover {
-    background-color: #ff0000;
+    background-color: #777777;
     color: #fff !important;
     text-decoration: none;
     padding: 5px 1px 5px 1px;
@@ -60,7 +138,7 @@ a:focus {
 
 #mainContent {
     /* background-color: #efeee7; */
-    background: #dddddd;
+    background: #333333;
     margin: 0;
     padding-top: 30px;
     padding-bottom:100px;
@@ -68,16 +146,63 @@ a:focus {
 
 .container {
     background-color: #ffffff;
-    width: 225px;
+    /* width: 225px; */
     margin: 0 auto;
     padding: 10px 30px 10px 30px;
+    max-width: 992px;
+}
+
+.searchContent {
+    padding: 0px 10px 10px 10px;
+}
+
+.userSearch {
+    margin-right: 0;
+}
+
+.singleLine {
+    margin-right: 0;
+    width: 100%;
 }
 
 h1 {
     font-family: "Georgia", "Times New Roman", Times, serif;
-    font-size: 25px;
-    color: #666666;
+    color: #777777;
+    margin: 0;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+h3 {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    color: #333333;
+    margin-left: 10px;
+    text-align: left;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+    font-size: 28px;
+}
+
+.inputTextArea {
+    width: 100%;
+    resize: none;
+}
+
+.textArea {
+    width: 100%;
+    border: solid;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #0a00ff;
+    text-align: center;
+    padding-top: 10px;
+    height: 150px;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: none;
 }
 
 p {
@@ -85,6 +210,7 @@ p {
     font-size: 15px;
     line-height: 100%;
     color: #777777;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -95,16 +221,27 @@ hr {
     margin-bottom: 0;
 }
 
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
 .footer {
     background: #666666;
     margin: 0;
     text-align: center;
     font-size: 14px;
-    padding-top: 35px;
-    padding-bottom: 5px;
+    padding: 10px 0px;
+    /* padding-bottom: 35px !important; */
     border-top: solid;
     border-width: 5px;
     border-color: #0a00ff;
+    height: 100%;
 }
 
 .text-muted {
@@ -112,8 +249,58 @@ hr {
 }
 
 .btn {
+    width: 100px;
+    display: block;
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color: #ffffff;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    outline: none;
+    padding: 0;
+}
+
+.savedCityBtn {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.clearBtn {
+    width: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    color: #ffffff;
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: #4a008f;
+    color: #4a008f;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    visibility: visible;
 }
 
 .img-fluid {
@@ -126,7 +313,7 @@ hr {
 .label {
     position: relative;
     background: #666666;
-    bottom: 70px;
+    bottom: 80px;
     z-index: 200;
     width: 100%;
     /* padding: 5px; */
@@ -143,8 +330,21 @@ hr {
     background-color: #ffffff;
     color: #666666 !important;
     text-decoration: none;
-  }
+}
 
+.form-control {
+    resize: none;
+}
+
+#passLength {
+    padding-top: 15px;
+    text-align: left;
+}
+
+/* #passwordLength {
+    margin: auto;
+    display: block;
+} */
 /* These rules take effect when the browser's width */
 /* is either 225px or more. */
 @media screen and (min-width: 225px) {
@@ -163,16 +363,28 @@ hr {
     .form-control {
         font-size: 12px;
     }
+    p {
+        font-size: 16px;
+        line-height: 100%;
+        text-align: justify;
+    }
+    .navLogo {
+        margin-top: 10px;
+    }
+    #currentTime {
+        margin-top: 0;
+    }
+    .labelText {
+        font-size: 20px;
+    }
 }
-
-
 /* These rules take effect when the browser's width */
 /* is either 320px or more. */
 @media screen and (min-width: 320px) {
     /* The body's bg color will be #4caf50 */
     body {
       background-color: #4caf50;
-    }
+    } */
     
     h1 {
         text-align: left;
@@ -183,17 +395,28 @@ hr {
         height: 60px;
     }
 
-    .label {}
-
     /* The container width will be 576px */
-    /* .container {
+    .container {
       width: 100%;
-    } */
+    }
+    p {
+        font-size: 18px;
+        line-height: 150%;
+        text-align: justify;
+    }
+    .navLogo {
+        margin-top: 10px;
+    }
+    #currentTime {
+        margin-top: 0;
+    }
+    .labelText {
+        font-size: 20px;
+    }
 }
-
 /* These rules take effect when the browser's width */
 /* is either 576px or more. */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) { */
     /* The body's bg color will be #fca203 */
     body {
       background-color: #fca203;
@@ -204,8 +427,9 @@ hr {
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 115%;
+        text-align: justify;
     }
 
     .logoImage {
@@ -217,8 +441,13 @@ hr {
     .form-control {
         font-size: 8px;
     }
+    .navLogo {
+        margin-top: 10px;
+    }
+    #currentTime {
+        margin-top: 0;
+    }
 }
-
 /* These rules take effect when the browser's width */
 /* is either 768px or more. */
 @media screen and (min-width: 768px) {
@@ -232,7 +461,7 @@ hr {
     }
 
     p {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 150%;
         text-align: justify;
     }
@@ -246,8 +475,13 @@ hr {
     .form-control {
         font-size: 12px;
     }
+    .navLogo {
+        margin-top: 0;
+    }
+    #currentTime {
+        margin-top: 30px;
+    }
 }
-
 /* These rules take effect when the browser's width */
 /* is either 992px or more. */
 @media screen and (min-width: 992px) {
@@ -261,7 +495,7 @@ hr {
     }
 
     p {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 150%;
         text-align: justify;
     }
@@ -274,6 +508,12 @@ hr {
     .form-group,
     .form-control {
         font-size: 15px;
+    }
+    .navLogo {
+        margin-top: 0;
+    }
+    #currentTime {
+        margin-top: 30px;
     }
 }
 

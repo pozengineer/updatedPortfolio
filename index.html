@@ -1,37 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-us" class="h-100">
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>wk02Ass</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>updatedPortfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"/>
+
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style01.css">
-        
     </head>
 
     <body class="d-flex flex-column h-100">
-        <!-- <script type="text/javascript" src="assets/javaScript/javaScript.js"></script> -->
+        <header class='mainTitle'>
+            <div class="row brandname">
+                <div class="col-sm-12 col-md-6 navLogo">
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/Logo/pozLogoHtml.jpg" alt="Company Logo" class="logoImage"></a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <p id="currentTime"></p>
+                </div>
+            </div>
+        </header>
         
         <section class="navBar">
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="assets/images/Logo/pozLogoHtml.jpg" alt="Company Logo" class="logoImage"></a>
+            <nav class="navbar navbar-expand-md navbar-light bg-light header">
+                <a class="navbar-brand navName" href="#">DHANI POZNIAK</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html"><i class="fab fa fa-home"></i><span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="contact.html"><i class="fab fa fa-github"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="fab fa fa-linkedin-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pROJECTS.html">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                            
+                        </li>    
                     </ul>
                     <!--
                     <div class="navbar-nav">  
@@ -42,9 +63,9 @@
                     </div>
                     -->
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
-                </a>
+                </a> -->
             </nav>
         </section>
 
@@ -60,11 +81,15 @@
                 ​
                 <!-- row02 -->
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
                         <img src="assets/images/ProfilePic02.jpg" alt="Vegeta" class="img-fluid">
                     </div>
-                    <div class="col-sm-8">
-                        <p> A highly motivated and hardworking individual, undertaking a programming course who is seeking a learning- based role in an IT Company. My education, self-taught knowledge and experience combined with my interest and passion in Cloud Computing and Virtualisation, Servers, and Coding will allow me to learn, contribute and excel in the Information & Technology Industry.
+                    <div class="col-xs-12 col-sm-6 col-md-9">
+                        <p> A highly motivated and hardworking individual, who is seeking a challenging role as an entry-level
+                            full stack web developer with your Company. My education in full stack web development at the
+                            University of Sydney, and self-taught knowledge and experience combined with my interest, passion
+                            and enjoyment in coding, programming, Cloud Computing and Virtualisation, will enable me to learn,
+                            contribute and excel in the Web Development Industry. My ability to learn new coding languages and programs enables me to understand coding concepts quickly which can then be transferred and utilised in developing user friendly web-based applications using html, css, javaScript, bootstrap, jQuery, API's and many more coding languages and concepts.
                         </p>
                     </div>
 
@@ -73,11 +98,7 @@
                 <!-- row03 -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <p> Building computers and providing general IT support and troubleshooting has given me a technical
-                        understanding of computer components, hardware, software, and network configuration. I have a
-                        Bachelors Degree in Mechanical Engineering but unfortunatly have been unable to obtain
-                        full-time employment with the skills that I have acquired during my university studies.
-                        </p>
+                        <a href="#" class='appLink' target='_blank'>Resume MKX Link</a>
                     </div>
     
                 </div>
@@ -85,24 +106,34 @@
                 <!-- row04 -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <p>I have decided to undertake a career change in coding and hopefully develop skills that will enable
-                        me to secure employment that will allow me to provide for my family. I hope to develop a strong
-                        foundation in coding with this course.
+                        <p>
                         </p>
                     </div>
     
                 </div>
-
             </div>
         </section>
-
+        <div class="push"></div>
+        
         <footer class="footer mt-auto py-3">
-            <span class="text-muted">Copyright &#169; 2019</span>
+            <div>
+                <span class="text-muted">Copyright &#169; 2019 POZ DRAFTING & IT SOLUTIONS - All Rights Reserved</span>
+            </div>
+            <div>
+                <a class="text-muted" href='#'>dhani@pozitsolutions.com.au</a>
+                <span class="text-muted">| 0412 966 933</span>
+            </div>
+            <div>
+                <span class="text-muted">ROSE BAY, NSW</span>
+            </div>
         </footer>
+
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/javaScript/moment.min.js"></script>
+        <script type="text/javascript" src="assets/javaScript/javaScript01.js"></script>
         <script>
             function myFunction() {
               var x = document.getElementById("collapse");
