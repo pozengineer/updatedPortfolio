@@ -23,26 +23,24 @@ from bootstrap that were used in the development of this application were:
 - Grid Layout
 - Forms
 - Buttons
+- Modals
 
 Getting Started
 
 This documentation will assist you in viewing this project. To view the project either open
 the url of the deployed application with the following address in any browser:
 
-https://pozengineer.github.io/Week02-Assignment/
+https://pozengineer.github.io/updatedPortfolio/
 
 Download and clone the repository from GitHub using the following command:
 
-git clone https://github.com/pozengineer/Week02-Assignment.git
+git clone https://github.com/pozengineer/updatedPortfolio.git
 
 This application was built using:
 - HTML: HyperText Markup Language that allows the developer to describe pages
 - CSS: Style Sheet Language that allows the developer to style an HTML document
 - BootStrap: Library of HTML and CSS files and code https://getbootstrap.com/
 
-![About Me tablet](assets/images/aboutMe01.jpg)
-![About Me phone](assets/images/aboutMe02.jpg)
-![Portfolio tablet](assets/images/portFolio01.jpg)
-![Portfolio phone](assets/images/portFolio02.jpg)
-![Contact tablet](assets/images/contact01.jpg)
-![Contact phone](assets/images/contact02.jpg)
+![Home tablet](assets/images/updatedPorfolio01.jpg)
+![Projects tablet](assets/images/updatedPortfolio02.jpg)
+![Modal tablet](assets/images/updatedPortfolio03.jpg)

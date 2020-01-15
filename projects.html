@@ -43,13 +43,14 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"><i class="fab fa fa-home"></i><span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html"><i class="fab fa fa-home"></i><span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa fa-github"></i></a>
+                        <a class="nav-link" href="https://github.com/pozengineer" target='_blank'><i class="fab fa fa-github"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fab fa fa-linkedin-square"></i></a>
+                        <a class="nav-link" href="https://linkedin.com/in/dhani-pozniak-34801a196" target='_blank'><i class="fab fa fa-linkedin-square"></i></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="projects.html">Projects</a>
@@ -89,10 +90,11 @@
                     <img src="assets/images/digiPic01.jpg" alt="digiPic01" class="img-fluid">
                     <div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal" data-target="#codeQuiz">
+                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal"
+                            data-target="#codeQuiz">
                             Code Quiz
                         </button>
-    
+
                         <!-- Modal -->
                         <div class="modal fade" id="codeQuiz" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -106,11 +108,20 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <img class="card-img-top" src="assets/images/modalImage01.jpg" alt="Card image cap">
                                             <div class="card-body">
-                                              <!-- <h5 class="card-title">Card title</h5> -->
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class='appLink' target='_blank'>Application Link</a>
+                                                <!-- <h5 class="card-title">Card title</h5> -->
+                                                <p class="card-text">The web application is a code quiz that allows the user to answer a set of multiple
+                                                    choice questions with a countdown. If the user selects the correct answer, they get a score value
+                                                    increment. However, if they select the wrong answer, a time penalty is added to the countdown. When the
+                                                    user finishes the quiz, they are directed to a window where they insert their initials. The user clicks
+                                                    on a button that submits their initials alond with the final score that they have achieved into localStorage
+                                                    where they can view the data at any point in the application through the highscores tab which will list the
+                                                    highscores array.
+                                                </p>
+                                                <a href="https://pozengineer.github.io/codeQuiz/" class='appLink' target='_blank'>Application Link</a>
+                                                <br/>
+                                                <a href="https://github.com/pozengineer/codeQuiz.git" class='appLink' target='_blank'>Git Clone Repository Link</a>
                                             </div>
                                         </div>
                                     </div>
@@ -126,13 +137,14 @@
 
 
                 <div class="col-sm-6 col-md-5 col-lg-4">
-                    <img src="assets/images/digiPic05.jpg" alt="digiPic01" class="img-fluid"> 
+                    <img src="assets/images/digiPic05.jpg" alt="digiPic01" class="img-fluid">
                     <div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal" data-target="#passwordGenerator">
+                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal"
+                            data-target="#passwordGenerator">
                             Password Generator
                         </button>
-    
+
                         <!-- Modal -->
                         <div class="modal fade" id="passwordGenerator" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -146,17 +158,27 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <img class="card-img-top" src="assets/images/modalImage02.jpg" alt="Card image cap">
                                             <div class="card-body">
-                                              <!-- <h5 class="card-title">Card title</h5> -->
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class='appLink' target='_blank'>Application Link</a>
+                                                <!-- <h5 class="card-title">Card title</h5> -->
+                                                <p class="card-text">The web application is a password generator that allows the user to select from an array
+                                                    of character sets. The selected character sets will be added to a 'charSet' string which will then be used
+                                                    to generate the password by randomly selecting characters from the 'charSet' string. The length of the
+                                                    password is decided by the user and the application will continue to select random characters until the
+                                                    password length is reached. Additional functions include copy to clipboard and reset where the user is able
+                                                    to select the generated password and paste it into another document. The reset method enables the user
+                                                    to set the application to it's default values in order to generate a new password but it is not necessary
+                                                    as the user can simply click on the generate password button again.
+                                                </p>
+                                                <a href="https://pozengineer.github.io/passwordGenerator/" class='appLink' target='_blank'>Application Link</a>
+                                                <br/>
+                                                <a href="https://github.com/pozengineer/passwordGenerator.git" class='appLink' target='_blank'>Git Clone Repository Link</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>
@@ -170,10 +192,11 @@
                     <img src="assets/images/digiPic02.jpg" alt="digiPic01" class="img-fluid">
                     <div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal" data-target="#dayCalender">
+                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal"
+                            data-target="#dayCalender">
                             Work Day Scheduler
                         </button>
-    
+
                         <!-- Modal -->
                         <div class="modal fade" id="dayCalender" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -187,17 +210,29 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <img class="card-img-top" src="assets/images/modalImage03.jpg" alt="Card image cap">
                                             <div class="card-body">
-                                              <!-- <h5 class="card-title">Card title</h5> -->
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class='appLink' target='_blank'>Application Link</a>
+                                                <!-- <h5 class="card-title">Card title</h5> -->
+                                                <p class="card-text">The web application is a day calender that enables the user to set tasks during the course
+                                                    of a working day between 09:00 and 5:00. The user enters text in the designated time block and clicks the
+                                                    save button which sends the value into local storage. The user can edit the text input at any time but must
+                                                    click the save button if they want to keep the entry stored. As time passes each time block is rendered a
+                                                    different color depending on its state.
+                                                    - If the time block is in the past the element is rendered orange.
+                                                    - If the time block is currently the element is rendered green.
+                                                    - If the time block is in the future the element is rendered white.
+                                                    When the application rolls over to the next day, the data entries are deleted and the local storage
+                                                    cleared for the upcoming working day.
+                                                </p>
+                                                <a href="https://pozengineer.github.io/dayCalender/" class='appLink' target='_blank'>Application Link</a>
+                                                <br/>
+                                                <a href="https://github.com/pozengineer/dayCalender.git" class='appLink' target='_blank'>Git Clone Repository Link</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <!-- <button type="button" class="btn btn-secondary"data-dismiss="modal">Close</button> -->
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>
@@ -206,15 +241,16 @@
                 </div>
 
                 <div class="col-sm-6 col-md-5 col-lg-4">
-                    <img src="assets/images/digiPic03.jpg" alt="digiPic01" class="img-fluid">
+                    <img src="assets/images/digiPic02.jpg" alt="digiPic01" class="img-fluid">
                     <div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal" data-target="#weatherDashboard">
+                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal"
+                            data-target="#weatherDashboard">
                             Weather Dashboard
                         </button>
-    
+
                         <!-- Modal -->
-                        <div class="modal fade" id="weatherDasboard" tabindex="-1" role="dialog"
+                        <div class="modal fade" id="weatherDashboard" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -226,17 +262,25 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <img class="card-img-top" src="assets/images/modalImage04.jpg" alt="Card image cap">
                                             <div class="card-body">
-                                              <!-- <h5 class="card-title">Card title</h5> -->
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class='appLink' target='_blank'>Application Link</a>
+                                                <!-- <h5 class="card-title">Card title</h5> -->
+                                                <p class="card-text">The web application is a weather dashboard that enables the user to search any city in the
+                                                    world, and the application will display a response with the current weather conditions of that city as well
+                                                    as a five day forcast provided by a weather API. The application enables the user to store their searches in
+                                                    local storage and then creates button elements which will provide the same information when clicked. An additional
+                                                    feature of the application is that it utilses geolocation of the device to display the weather conditions of the city
+                                                    the user is currently in.
+                                                </p>
+                                                <a href="https://pozengineer.github.io/weatherDashboard/" class='appLink' target='_blank'>Application Link</a>
+                                                <br/>
+                                                <a href="https://github.com/pozengineer/weatherDashboard.git" class='appLink' target='_blank'>Git Clone Repository Link</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <!-- <button type="button" class="btn btn-secondary"data-dismiss="modal">Close</button> -->
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>
@@ -250,10 +294,11 @@
                     <img src="assets/images/digiPic04.jpg" alt="digiPic01" class="img-fluid">
                     <div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal" data-target="#myEventsApp">
+                        <button type="button" class="btn btn-primary label labelText" data-toggle="modal"
+                            data-target="#myEventsApp">
                             My Events App
                         </button>
-    
+
                         <!-- Modal -->
                         <div class="modal fade" id="myEventsApp" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -267,17 +312,24 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="card" style="width: 100%;">
-                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <img class="card-img-top" src="assets/images/modalImage05.jpg" alt="Card image cap">
                                             <div class="card-body">
-                                              <!-- <h5 class="card-title">Card title</h5> -->
-                                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                              <a href="#" class='appLink' target='_blank'>Application Link</a>
+                                                <!-- <h5 class="card-title">Card title</h5> -->
+                                                <p class="card-text">This two paged web application is used to aid user on searching for events they like,
+                                                    and track them as their favorite in favorite page. It's designed in the concept of a small personal
+                                                    search engine for saving events and display the simplified information of the saved events. Also, this
+                                                    demo application can be considered as a starting point for a real company page as a third-party resource
+                                                    gathering engine. This application is developed under the concept of responsive design.
+                                                </p>
+                                                <a href="https://sherryj-sk.github.io/Project1/" class='appLink' target='_blank'>Application Link</a>
+                                                <br/>
+                                                <a href="https://github.com/SherryJ-SK/Project1.git" class='appLink' target='_blank'>Git Clone Repository Link</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>
@@ -290,16 +342,12 @@
     <div class="push"></div>
 
     <footer class="footer mt-auto py-3">
-        <div>
-            <span class="text-muted">Copyright &#169; 2019 POZ DRAFTING & IT SOLUTIONS - All Rights Reserved</span>
-        </div>
-        <div>
-            <a class="text-muted" href='#'>dhani@pozitsolutions.com.au</a>
-            <span class="text-muted">| 0412 966 933</span>
-        </div>
-        <div>
-            <span class="text-muted">ROSE BAY, NSW</span>
-        </div>
+        <span class="text-muted">Copyright &#169; 2019 POZ DRAFTING & IT SOLUTIONS - All Rights Reserved</span>
+        <br/>
+        <a class="text-muted" href='#'>dhani@pozitsolutions.com.au</a>
+        <span class="text-muted">| 0412 966 933</span>
+        <br/>
+        <span class="text-muted">ROSE BAY, NSW</span>
     </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
