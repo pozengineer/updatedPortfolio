@@ -42,5 +42,6 @@ This application was built using:
 - BootStrap: Library of HTML and CSS files and code https://getbootstrap.com/
 
 ![Home tablet](assets/images/updatedPorfolio01.jpg)
-![Projects tablet](assets/images/updatedPortfolio02.jpg)
-![Modal tablet](assets/images/updatedPortfolio03.jpg)
+![Home responsive](assets/images/updatedPorfolio02.jpg)
+![Projects tablet](assets/images/updatedPortfolio03.jpg)
+![Modal tablet](assets/images/updatedPortfolio04.jpg)
