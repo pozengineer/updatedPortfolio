@@ -112,13 +112,13 @@ a:hover {
 }
 
 .appLink:hover {
-    color: #0a00ff !important;
+    color: #5852ff !important;
     text-decoration: none;
 }
 
 .nav-item:hover {
     background-color: #777777;
-    color: #fff !important;
+    color: #ffffff !important;
     text-decoration: none;
     padding: 5px 1px 5px 1px;
     width: 100px;
@@ -126,11 +126,11 @@ a:hover {
 }
 
 a:focus {
-    color: #0a00ff;
+    color: #5852ff;
 }
 
 .active {
-    background-color: #0a00ff;
+    background-color: #2684ac;
     text-decoration: none;
     padding: 5px 1px 5px 1px;
     width: 100px;
